@@ -12,7 +12,8 @@ public class RobotRoute {
                     if (robot.getX() < toX) {
                         robot.stepForward();
                         System.out.println("Current direction: " + robot.getDirection()
-                                + " Current position: " + "X: " + robot.getX() + ", Y: " + robot.getY());
+                                + " Current position: " + "X: " + robot.getX()
+                                + ", Y: " + robot.getY());
                     }
                 } else if (robot.getX() > toX) {
                     while (robot.getDirection() != Direction.LEFT) {
@@ -21,7 +22,8 @@ public class RobotRoute {
                     if (robot.getX() > toX) {
                         robot.stepForward();
                         System.out.println("Current direction: " + robot.getDirection()
-                                + " Current position: " + "X: " + robot.getX() + ", Y: " + robot.getY());
+                                + " Current position: " + "X: " + robot.getX()
+                                + ", Y: " + robot.getY());
                     }
                 }
             } else {
@@ -32,7 +34,8 @@ public class RobotRoute {
                     if (robot.getY() < toY) {
                         robot.stepForward();
                         System.out.println("Current direction: " + robot.getDirection()
-                                + " Current position: " + "X: " + robot.getX() + ", Y: " + robot.getY());
+                                + " Current position: " + "X: " + robot.getX()
+                                + ", Y: " + robot.getY());
                     }
                 } else if (robot.getY() > toY) {
                     while (robot.getDirection() != Direction.DOWN) {
@@ -41,7 +44,8 @@ public class RobotRoute {
                     if (robot.getY() > toY) {
                         robot.stepForward();
                         System.out.println("Current direction: " + robot.getDirection()
-                                + " Current position: " + "X: " + robot.getX() + ", Y: " + robot.getY());
+                                + " Current position: " + "X: " + robot.getX()
+                                + ", Y: " + robot.getY());
                     }
                 }
             }

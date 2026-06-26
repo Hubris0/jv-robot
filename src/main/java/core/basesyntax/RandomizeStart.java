@@ -15,8 +15,8 @@ public class RandomizeStart {
         Robot robot = new Robot(randomDirection, randomX, randomY);
         System.out.println("Randomized Robot Start Position:");
         System.out.println(" Direction: " + robot.getDirection());
-        System.out.println(" Starting position X: " + robot.getX() +
-                "\n" + " Starting position Y: " + robot.getY());
+        System.out.println(" Starting position X: " + robot.getX()
+                + "\n" + " Starting position Y: " + robot.getY());
         return robot;
     }
 }
