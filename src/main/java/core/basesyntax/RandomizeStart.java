@@ -3,9 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class RandomizeStart {
-        int coordinateIndexLimit = 10;
-        Direction[] directions = Direction.values();
-        Random random = new Random();
+    private int coordinateIndexLimit = 10;
+    private Direction[] directions = Direction.values();
+    private Random random = new Random();
 
     public Robot getRandomStart() {
         int randomDirectionIndex = random.nextInt(directions.length);
@@ -15,7 +15,8 @@ public class RandomizeStart {
         Robot robot = new Robot(randomDirection, randomX, randomY);
         System.out.println("Randomized Robot Start Position:");
         System.out.println(" Direction: " + robot.getDirection());
-        System.out.println(" Starting position X: " + robot.getX() + "\n" + " Starting position Y: " + robot.getY());
+        System.out.println(" Starting position X: " + robot.getX() +
+                "\n" + " Starting position Y: " + robot.getY());
         return robot;
     }
 }
