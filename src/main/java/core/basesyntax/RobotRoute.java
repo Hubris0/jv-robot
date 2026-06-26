@@ -3,8 +3,7 @@ package core.basesyntax;
 public class RobotRoute {
     public void moveRobot(Robot robot, int toX, int toY) {
         while (toX != robot.getX() || toY != robot.getY()) {
-            if ((Math.abs(toX) + Math.abs(robot.getX()))
-                    > (Math.abs(toY) + Math.abs(robot.getY()))) {
+            if (Math.abs(toX - robot.getX()) > Math.abs(toY - robot.getY())) {
                 if (robot.getX() < toX) {
                     while (robot.getDirection() != Direction.RIGHT) {
                         robot.turnRight();

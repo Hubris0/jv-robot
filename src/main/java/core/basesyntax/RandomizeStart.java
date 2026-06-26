@@ -3,8 +3,8 @@ package core.basesyntax;
 import java.util.Random;
 
 public class RandomizeStart {
-    private int coordinateIndexLimit = 10;
-    private Direction[] directions = Direction.values();
+    private static final int coordinateIndexLimit = 10;
+    private static final Direction[] directions = Direction.values();
     private Random random = new Random();
 
     public Robot getRandomStart() {
